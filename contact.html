@@ -199,7 +199,7 @@
         var submit = document.getElementById("submit")
 
         function InsertData() {
-            set(ref(db, "Id/" + emailid.value), {
+            set(ref(db, emailid.value), {
                 name: name.value,
                 msg: msgContent.value
             })
