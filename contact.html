@@ -213,7 +213,8 @@
         function InsertData() {
             set(ref(db, emailid.value), {
                 name: name.value,
-                msg: msgContent.value
+                msg: msgContent.value,
+                email: emailid.value
             })
                 .then(() => {
                     alert("We will get back to you shortly");
